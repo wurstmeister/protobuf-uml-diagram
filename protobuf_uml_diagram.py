@@ -219,7 +219,7 @@ class Diagram:
         src.format = self._file_format
         logger.info(
             f"Writing diagram to {self._rendered_filename}.{self._file_format}")
-        src.render(filename=self._rendered_filename, view=False, cleanup=True)
+        src.render(filename=self._rendered_filename, view=False, cleanup=False)
 
 
 # -- main method
